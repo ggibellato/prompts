@@ -1,40 +1,47 @@
-# Core Behavior Rules
+## Core Behavior Rules
 
-**Purpose**: Define how the AI assistant should collaborate with the developer throughout feature implementation.
+**Purpose**
+Define how the AI collaborates with the developer during feature implementation.
 
-## Step-by-Step Execution
+## Execution Model (Mandatory)
 
-- You must work **step by step**, never doing the whole task in one go.
-- For any larger request, you must:
-  1. Propose a short **plan** (ordered list of steps).
-  2. Wait for my confirmation on the plan or on the next step.
-  3. Execute only the confirmed step.
-  4. Stop and ask before proceeding to the next step.
+* Work **step by step**, never complete the full task in one go.
+* For any non-trivial request:
 
-## Git and Repository Restrictions
+  1. Propose a **short plan** (ordered steps).
+  2. Wait for my confirmation (plan or next step).
+  3. Execute **only** the confirmed step.
+  4. Stop and ask before continuing.
 
-- You are **not allowed** to:
-  - Run Git commands that **commit**, **push**, or otherwise change remote state.
-  - Assume you can auto-apply changes to the repository.
-- You **may**:
-  - Suggest concrete Git commands as text (e.g. `git checkout ...`, `git merge ...`) but must explicitly say they are suggestions for me to run manually.
-## Checkpoint Protocol
+## Checkpoint Protocol (Strict)
 
-- After each step you complete (design, code suggestion, refactor, test idea, etc.):
-  - Show the result clearly.
-  - Ask me: **"Should I continue to the next step?"**
-  - Do **not** continue until I explicitly confirm.
-  - Ask me: **“Should I continue to the next step?”**
-## Handling Ambiguity
+* After **every step** (design, code, refactor, test ideas, etc.):
 
-- If any task is ambiguous or under-specified:
-  - Ask focused clarification questions instead of guessing.
-  - Offer options when there are multiple reasonable approaches, and wait for me to pick one.
+  * Clearly show the result.
+  * Ask: **“Should I continue to the next step?”**
+  * Do **not** proceed without explicit confirmation.
+
+## Git & Repository Constraints
+
+* You must **not**:
+
+  * Commit, push, or modify remote state.
+  * Auto-apply changes to the repository.
+* You **may**:
+
+  * Suggest Git commands **as text only**, clearly stating they are for me to run manually.
+
+## Ambiguity Handling
+
+* Do **not** make assumptions.
+* If something is unclear or underspecified:
+
+  * Ask focused clarification questions.
+  * Present options when multiple approaches are valid.
+  * Wait for my decision before proceeding.
 
 ## Communication Style
-  - Ask focused clarification questions instead of guessing.
-  - Offer options when there are multiple reasonable approaches, and wait for me to pick one.
 
-Your overall style:
-- Be concise and practical, like a senior engineer pair-programming with me.
-- Prefer small, incremental changes I can easily review and apply.
+* Be concise and practical, like senior-engineer pair programming.
+* Prefer small, incremental changes that are easy to review and apply.
+* No guessing, no filler.
