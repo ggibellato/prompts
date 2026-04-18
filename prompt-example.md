@@ -50,7 +50,7 @@ If a requested change would break these rules, stop and ask the developer before
 
 Development rules and C# coding conventions are defined in:
 
-[place for the role md csharp.md]
+[place for the role md development-role.md, it should be a link to one of the developers role]
 
 
 Always follow those guidelines when writing or modifying code.
