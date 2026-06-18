@@ -1,0 +1,1 @@
+Please edit the following text to correct grammar and spelling, and improve clarity, cohesion, and flow. Ensure the writing is clear, concise, and unambiguous. Preserve the original meaning and tone, and make it suitable for general use (e.g., emails, applications, stories, or prompts).
