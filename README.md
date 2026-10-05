@@ -8,3 +8,11 @@ The [base folder](base/README.md) contains foundational prompt components that d
 ## Templates
 
 The [templates folder](templates/README.md) contains reusable prompt templates for different AI agent architectures, including orchestrator, specialist, and workflow prompts. These templates provide structured approaches for building AI systems with specialized roles and coordinated task execution.
+
+## Prompts
+
+The [prompts folder](prompts/README.md) contains standalone, ready-to-use prompts such as text review and a technical second opinion.
+
+## Skills
+
+The [skills folder](skills/README.md) contains Claude Code skills for generating a layered testing guide and for auditing test coverage and test quality.
